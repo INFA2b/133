@@ -1,0 +1,20 @@
+{
+  "name": "media-uploader",
+  "version": "1.0.0",
+  "description": "A web application to upload images to a database and call them from a web interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INFA2b/133.git"
+  },
+  "author": "freakyshine",
+  "license": "SEE LICENSE IN /LICENSE",
+  "bugs": {
+    "url": "https://github.com/INFA2b/133/issues"
+  },
+  "homepage": "https://github.com/INFA2b/133#readme"
+}
