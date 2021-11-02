@@ -3,13 +3,13 @@ const express = require('express')
 const app = express()
 const port = 3000
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/contentdb";
+const mongoUrl = "mongodb://localhost:27017/contentdb";
 
 // Initialize database
-MongoClient.connect(url, function(err, db) {
+MongoClient.connect(mongoUrl, function(err, db) {
   if (err) throw err;
   var dbo = db.db("mydb");
-  dbo.createCollection("images", function(err, res) {
+  dbo.createCollection("projectImages", function(err, res) {
     if (err) throw err;
     console.log("Collection created!");
     db.close();
